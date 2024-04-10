@@ -2,10 +2,15 @@
 Function definitions for TTT
 '''
 import random
+import os
 
+def clear():
+    os.system('cls')
 
 def display_board(board):
     
+    clear()
+
     print(board[7] + '|' + board[8] + '|' + board[9])
     print('-|-|-')
     print(board[4] + '|' + board[5] + '|' + board[6])
@@ -25,11 +30,12 @@ def player_input():
         marker = input("Please choose (X or O) ").upper()
         
     if marker == 'X':
-            
+            clear()
             return ('X','O')
     else:
-        
+            clear()
             return ('O','X')
+    
 
 
 def place_marker(board, marker, position):
@@ -47,6 +53,7 @@ def choose_first():
         return "Player1"
     else:
         return "Player2"
+    
     
 def space_check(board, position):
     return board[position] == ' '

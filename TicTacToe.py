@@ -11,7 +11,7 @@ def main():
   while True:
       print('Welcome to Tic Tac Toe!')
       theBoard = [' '] * 10
-      player1_marker, player2_marker = player_input()
+      player1_marker, player2_marker = player_input() 
       turn = choose_first()
       print(turn + ' will go first.')
       
