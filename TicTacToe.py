@@ -2,7 +2,7 @@
 Simple Tic Tac Toe Game
 '''
 import random
-from TTTFunc import *
+from TTTFunc import display_board, player_input, place_marker, win_check, choose_first, space_check, full_board_check, player_choice, replay
 
 
 def main():
