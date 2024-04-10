@@ -2,7 +2,7 @@
 Simple Tic Tac Toe Game
 '''
 import random
-from TTTFunc import *
+from TTTFunc import display_board, player_input, place_marker, win_check, choose_first, space_check, full_board_check, player_choice, replay
 
 
 def main():
@@ -11,7 +11,7 @@ def main():
   while True:
       print('Welcome to Tic Tac Toe!')
       theBoard = [' '] * 10
-      player1_marker, player2_marker = player_input()
+      player1_marker, player2_marker = player_input() 
       turn = choose_first()
       print(turn + ' will go first.')
       
