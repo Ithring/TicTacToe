@@ -2,20 +2,20 @@
 Simple Tic Tac Toe Game
 '''
 import random
-from IPython.display import clear_output
 from TTTFunc import *
 
 
 def main():
-  print('Welcome to Tic Tac Toe!')
+  
 
   while True:
+      print('Welcome to Tic Tac Toe!')
       theBoard = [' '] * 10
       player1_marker, player2_marker = player_input()
       turn = choose_first()
       print(turn + ' will go first.')
       
-      play_game = input('Are you ready to play? Enter Yes or No.')
+      play_game = input('Are you ready to play? Enter Yes or No. ')
       
       if play_game.lower()[0] == 'y':
           game_on = True

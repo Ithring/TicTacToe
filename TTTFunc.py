@@ -2,7 +2,7 @@
 Function definitions for TTT
 '''
 import random
-from IPython.display import clear_output
+
 
 def display_board(board):
     
@@ -11,8 +11,8 @@ def display_board(board):
     print(board[4] + '|' + board[5] + '|' + board[6])
     print('-|-|-')
     print(board[1] + '|' + board[2] + '|' + board[3])
+
     
-    clear_output()
 
 marker = ''
 
@@ -22,7 +22,7 @@ def player_input():
     marker = ''
     #Make sure input is valid ( X/O )
     while not (marker == 'X' or marker == 'O'):
-        marker = input("Please choose (X or O)").upper()
+        marker = input("Please choose (X or O) ").upper()
         
     if marker == 'X':
             
